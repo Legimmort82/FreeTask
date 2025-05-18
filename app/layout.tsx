@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, K2D } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/features/Homepage/Header";
+import  localFont from "next/font/local"
+import "../styles/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
+const IranSansWeb = localFont({
+  src : "../assets/fonts/IRANSansWeb.ttf",
+  variable : "--font-IranSans"
+})
 const K2DSans = K2D({
   variable: "--font-K2d",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -29,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${K2DSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${K2DSans.variable} ${IranSansWeb.variable} antialiased`}
       >
         {children}
       </body>

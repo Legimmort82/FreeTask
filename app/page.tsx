@@ -1,3 +1,8 @@
+import Header from "@/layouts/Header";
 export default function Home() {
-  return <div className="text-8xl text-blue-200 font-geist-mono">Hello </div>;
+  return (
+    <div className="">
+      <Header />
+    </div>
+  );
 }
