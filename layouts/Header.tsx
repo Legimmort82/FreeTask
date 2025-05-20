@@ -15,7 +15,7 @@ const Header = () => {
       <div className="px-[108px] pt-10 flex items-center w-full justify-between gap-[120px]">
         <div className="flex flex-none flex-col gap-2h text-xs">
           <Image src={Logo} alt="Logo" />
-          فروشگاه لوازم ورزشی فبت لند
+          فروشگاه لوازم ورزشی فیت لند
         </div>
         <div className="flex-1 justify-center flex relative">
           <Image src={Search} alt="Search" className="absolute top-3 right-4" />
